@@ -8,7 +8,8 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'templatemo', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag 'fontawesome.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <%# <%= stylesheet_link_tag 'fontawesome.min', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -19,10 +20,6 @@
 
 
     <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <%= javascript_pack_tag 'templatemo', 'data-turbolinks-track': 'reload' %>
     <!-- End Script -->
 </html>
